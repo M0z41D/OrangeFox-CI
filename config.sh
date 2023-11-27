@@ -2,7 +2,7 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/twrpdtgen/android_device_xiaomi_zeus"
+export DT_LINK="https://github.com/twrpdtgen/android_device_xiaomi_zeus.git -b zeus_global-user-13-SKQ1.220303.001-V14.0.7.0.TLBMIXM-release-keys"
 
 export DEVICE="zeus"
 export OEM="xiaomi"
