@@ -27,7 +27,7 @@ else
 fi
 
 # Empty the VTS Makefile
-if [ "$FOX_BRANCH" = "fox_11.0" ]; then
+if [ "$FOX_BRANCH" = "fox_12.1" ]; then
     rm -rf frameworks/base/core/xsd/vts/Android.mk
     touch frameworks/base/core/xsd/vts/Android.mk 2>/dev/null || echo
 fi
@@ -63,11 +63,11 @@ export LC_ALL="C"
 
 # Default Build Type
 if [ -z "$FOX_BUILD_TYPE" ]; then
-    export FOX_BUILD_TYPE="Unofficial-CI"
+    export FOX_BUILD_TYPE="Unofficial-MozaiD"
 fi
 
 # Default Maintainer's Name
-[ -z "$OF_MAINTAINER" ] && export OF_MAINTAINER="Unknown"
+[ -z "$OF_MAINTAINER" ] && export OF_MAINTAINER="MozaiD"
 
 # Set BRANCH_INT variable for future use
 BRANCH_INT=$(echo $SYNC_BRANCH | cut -d. -f1)
